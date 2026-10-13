@@ -10,11 +10,13 @@ Melody is a text-menu playlist manager. Every collection in it (songs, playlists
 
 ```powershell
 To run the program:
--cp out Main
+java -cp out Main
 To run the tests: 
 javac -cp "lib\junit-platform-console-standalone-1.11.4.jar" -d out *.java
 java -jar lib\junit-platform-console-standalone-1.11.4.jar execute --class-path out --scan-class-path=out
 ```
+
+Note: will run differently on Mac
 
 **Expected test result: `96 tests found`, `96 tests successful`, `0 tests failed`.** If you see a different number, see Troubleshooting.
 
