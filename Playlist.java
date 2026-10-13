@@ -1,6 +1,6 @@
 /**
  * A named collection of songs. Wraps one LinkedChain<Song> and delegates to it.
- * Uses default identity equality, so two playlists may share a name (duplicates allowed).
+ * Uses default identity equality, so two playlists may share a name (duplicates allowed but not recommended).
  */
 public class Playlist {
     private String name;
