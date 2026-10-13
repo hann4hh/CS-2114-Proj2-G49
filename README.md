@@ -65,7 +65,7 @@ n = songs in the library, k = copies being removed, p = playlists, h = history e
 | `addSongToPlaylist` (added) | not in spec | O(p + n) | n/a |
 | Extra cost vs. spec | none | Every list/search/shuffle makes an O(n) snapshot array (O(n) extra space) | Time matches; space is new |
 
-Provided `LinkedChain` complexities (from its header) vs. our spec: `add` O(1) ✔, `remove(T)` O(n) ✔, `contains` O(n) ✔, `size`/`isEmpty` O(1) ✔. The spec's `removeAll`, tail-pointer append and iterator don't exist in the provided class (see Reflection).
+Provided `LinkedChain` complexities (from its header) vs. our spec: `add` O(1), `remove(T)` O(n), `contains` O(n), `size`/`isEmpty` O(1). The spec's `removeAll`, tail-pointer append and iterator don't exist in the provided class (see Reflection).
 
 ## Bad input: where each case is caught and what happens
 
